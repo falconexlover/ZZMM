@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /db_config.php
+Disallow: /save_booking.php
+Disallow: /booking-confirmation.php
+Disallow: /db_setup.sql
+Disallow: /.htaccess
+
+Sitemap: https://lesnoy-dvorik.ru/sitemap.xml 

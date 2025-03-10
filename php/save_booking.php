@@ -8,7 +8,7 @@
 session_start();
 
 // Подключение конфигурации БД
-require_once 'db_config.php';
+require_once '../includes/db_config.php';
 
 // Проверка метода запроса
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -37,6 +37,7 @@ try {
     $arrival_date = new DateTime($_POST['arrival_date']);
     $departure_date = new DateTime($_POST['departure_date']);
     $today = new DateTime();
+    $today->setTime(0, 0, 0); // Сбрасываем время, чтобы сравнивать только даты
     
     if ($arrival_date < $today) {
         throw new Exception("Дата заезда не может быть в прошлом");
@@ -46,13 +47,18 @@ try {
         throw new Exception("Дата выезда должна быть после даты заезда");
     }
     
+    // Проверка количества гостей
+    $guests = (int)$_POST['guests'];
+    if ($guests <= 0 || $guests > 10) {
+        throw new Exception("Некорректное количество гостей");
+    }
+    
     // Санитизация входных данных
     $name = sanitize($_POST['name']);
     $phone = sanitize($_POST['phone']);
     $email = sanitize($_POST['email']);
     $arrival_date = $_POST['arrival_date'];
     $departure_date = $_POST['departure_date'];
-    $guests = (int)$_POST['guests'];
     $room_type = sanitize($_POST['room_type']);
     $comments = isset($_POST['comments']) ? sanitize($_POST['comments']) : '';
     $payment_method = isset($_POST['payment_method']) ? sanitize($_POST['payment_method']) : 'cash';

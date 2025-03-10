@@ -1,0 +1,280 @@
+/* Стили для редактора контента */
+
+.content-container {
+    padding: 20px;
+}
+
+.content-header {
+    margin-bottom: 30px;
+}
+
+.content-header h1 {
+    color: #406343;
+    margin-bottom: 10px;
+}
+
+.content-header p {
+    color: #666;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.alert.success {
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    color: #3c763d;
+}
+
+.alert.error {
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    color: #a94442;
+}
+
+.content-tabs {
+    margin-bottom: 30px;
+}
+
+.nav-tabs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-tabs li {
+    margin-right: 5px;
+}
+
+.nav-tabs li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #555;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+
+.nav-tabs li a:hover {
+    background-color: #f5f5f5;
+    border-color: #ddd #ddd transparent;
+}
+
+.nav-tabs li.active a {
+    color: #406343;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    font-weight: bold;
+}
+
+.content-form {
+    max-width: 100%;
+}
+
+.form-section {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.form-section h3 {
+    color: #406343;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="date"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    min-height: 100px;
+}
+
+.help-text {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.image-editor {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.image-preview {
+    width: 200px;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-controls {
+    flex: 1;
+}
+
+.room-editor,
+.special-offer-editor {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.room-editor h4,
+.special-offer-editor h4 {
+    color: #406343;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.services-editor {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.services-editor h4 {
+    color: #406343;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.form-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form-buttons button,
+.form-buttons a {
+    margin-right: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #406343;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #355536;
+}
+
+.btn-secondary {
+    background-color: #8BA888;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #7a9677;
+}
+
+.map-preview {
+    margin-top: 20px;
+}
+
+.map-preview h4 {
+    margin-bottom: 10px;
+}
+
+#map-preview-container {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Стили для CKEditor */
+.ck-editor__editable {
+    min-height: 200px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .image-editor {
+        flex-direction: column;
+    }
+    
+    .image-preview {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .nav-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .nav-tabs li {
+        margin-bottom: 5px;
+    }
+} 

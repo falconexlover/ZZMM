@@ -21,6 +21,11 @@
             </a>
         </li>
         <li>
+            <a href="index.php?action=content" <?php echo ($action == 'content') ? 'class="active"' : ''; ?>>
+                <i class="fas fa-edit"></i> Редактор контента
+            </a>
+        </li>
+        <li>
             <a href="index.php?action=promo" <?php echo ($action == 'promo') ? 'class="active"' : ''; ?>>
                 <i class="fas fa-percent"></i> Промокоды
             </a>

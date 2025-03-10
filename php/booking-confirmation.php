@@ -10,7 +10,7 @@ session_start();
 // Проверка наличия данных о бронировании
 if (!isset($_SESSION['booking_success']) || !isset($_SESSION['booking_data'])) {
     // Если данных нет, перенаправляем на главную страницу
-    header('Location: index.html');
+    header('Location: ../index.html');
     exit;
 }
 

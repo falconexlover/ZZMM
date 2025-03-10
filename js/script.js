@@ -342,22 +342,40 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function initMap() {
-        const myMap = new ymaps.Map('map', {
-            center: [55.76, 37.64], // Координаты гостиницы (примерные)
-            zoom: 15
-        });
+        // Проверяем, существует ли элемент карты на странице
+        const mapElement = document.getElementById('map');
+        if (!mapElement) {
+            console.log('Элемент карты не найден на странице');
+            return;
+        }
         
-        const myPlacemark = new ymaps.Placemark([55.76, 37.64], {
-            hintContent: 'Гостиница "Лесной дворик"',
-            balloonContent: 'г. Москва, ул. Лесная, д. 10<br>Тел: +7 (495) 123-45-67'
-        }, {
-            iconLayout: 'default#image',
-            iconImageHref: 'assets/images/map-marker.png',
-            iconImageSize: [40, 40],
-            iconImageOffset: [-20, -40]
-        });
-        
-        myMap.geoObjects.add(myPlacemark);
+        try {
+            const myMap = new ymaps.Map('map', {
+                center: [55.76, 37.64], // Координаты гостиницы (примерные)
+                zoom: 15
+            });
+            
+            const myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+                hintContent: 'Гостиница "Лесной дворик"',
+                balloonContent: 'г. Москва, ул. Лесная, д. 10<br>Тел: +7 (495) 123-45-67'
+            }, {
+                iconLayout: 'default#image',
+                iconImageHref: 'assets/images/map-marker.png',
+                iconImageSize: [40, 40],
+                iconImageOffset: [-20, -40]
+            });
+            
+            myMap.geoObjects.add(myPlacemark);
+            
+            // Добавляем элементы управления
+            myMap.controls.add('zoomControl');
+            myMap.controls.add('typeSelector');
+            
+            // Запрещаем прокрутку карты при скролле страницы
+            myMap.behaviors.disable('scrollZoom');
+        } catch (error) {
+            console.error('Ошибка при инициализации карты:', error);
+        }
     }
     
     // Обработка модального окна политики конфиденциальности
