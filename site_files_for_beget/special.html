@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спецпредложения - Гостиница "Лесной дворик"</title>
+    <meta name="description" content="Специальные предложения и акции от гостиницы 'Лесной дворик'. Выгодные условия для отдыха с семьей и друзьями, сезонные скидки, пакетные туры.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="special-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .page-banner {
+            height: 400px;
+            background-image: url('assets/images/special-banner.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .page-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        
+        .page-banner-content {
+            text-align: center;
+            color: #fff;
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+        
+        .page-banner h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        .page-banner p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .special-offers {
+            padding: 60px 0;
+        }
+        
+        .offer-card {
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            transition: transform 0.3s ease;
+        }
+        
+        .offer-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .seasonal-offer {
+            display: flex;
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        
+        .seasonal-offer:hover {
+            transform: translateY(-5px);
+        }
+        
+        .seasonal-offer-image {
+            width: 40%;
+            position: relative;
+        }
+        
+        .seasonal-offer-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .seasonal-offer-content {
+            width: 60%;
+            padding: 25px;
+        }
+        
+        .seasonal-offer-content h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .offer-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: #e74c3c;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            z-index: 1;
+        }
+        
+        .seasonal-offer-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .offer-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #5a8f7b;
+            margin-bottom: 20px;
+        }
+        
+        .offer-price .old-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+        
+        .offer-features {
+            margin-bottom: 20px;
+        }
+        
+        .offer-feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            color: #666;
+        }
+        
+        .offer-feature i {
+            color: #5a8f7b;
+            margin-right: 10px;
+        }
+        
+        .offer-valid {
+            font-size: 14px;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f8f8f8;
+            border-radius: 4px;
+        }
+        
+        .promotion-section {
+            padding: 60px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .promo-box {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .promo-box h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .promo-box p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+        
+        .promo-code {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #5a8f7b;
+            color: white;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        
+        .cta-section {
+            padding: 60px 0;
+            text-align: center;
+            background-color: #eaf2ee;
+        }
+        
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .cta-content h2 {
+            margin-bottom: 20px;
+        }
+        
+        .cta-content p {
+            margin-bottom: 30px;
+            color: #666;
+        }
+        
+        @media screen and (max-width: 992px) {
+            .seasonal-offer {
+                flex-direction: column;
+            }
+            
+            .seasonal-offer-image,
+            .seasonal-offer-content {
+                width: 100%;
+            }
+            
+            .seasonal-offer-image {
+                height: 300px;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .page-banner {
+                height: 300px;
+            }
+            
+            .page-banner h1 {
+                font-size: 32px;
+            }
+            
+            .page-banner p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Лесной дворик">
+                </a>
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html#about">О нас</a></li>
+                    <li class="dropdown">
+                        <a href="hotel.html">Гостиница</a>
+                        <div class="dropdown-content">
+                            <a href="hotel.html#econom">Эконом</a>
+                            <a href="hotel.html#standard">Стандарт</a>
+                            <a href="hotel.html#family">Семейные</a>
+                            <a href="hotel.html#comfort">Комфорт</a>
+                            <a href="hotel.html#lux">Люкс</a>
+                        </div>
+                    </li>
+                    <li><a href="sauna.html">Сауна</a></li>
+                    <li><a href="banquet.html">Банкетный зал</a></li>
+                    <li><a href="special.html" class="active">Спецпредложения</a></li>
+                    <li><a href="index.html#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="booking-button">
+                <a href="index.html#booking" class="btn btn-primary">Забронировать</a>
+            </div>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="page-banner">
+        <div class="page-banner-content">
+            <h1>Спецпредложения</h1>
+            <p>Лучшие условия для вашего отдыха в гостинице "Лесной дворик"</p>
+        </div>
+    </div>
+
+    <section class="special-offers">
+        <div class="container">
+            <h2>Сезонные предложения</h2>
+            <div class="seasonal-offers">
+                <div class="seasonal-offer">
+                    <div class="seasonal-offer-image">
+                        <div class="offer-badge">Хит продаж</div>
+                        <img src="assets/images/romantic.jpg" alt="Романтический уик-энд">
+                    </div>
+                    <div class="seasonal-offer-content">
+                        <h3>Романтический уик-энд</h3>
+                        <div class="seasonal-offer-description">
+                            <p>Проведите незабываемые романтические выходные в нашей гостинице. Специальное предложение для пар, которые хотят отдохнуть от городской суеты и насладиться общением друг с другом.</p>
+                        </div>
+                        <div class="offer-features">
+                            <div class="offer-feature">
+                                <i class="fas fa-bed"></i>
+                                <span>Проживание в номере категории "Комфорт"</span>
+                            </div>
+                            <div class="offer-feature">
+                                <i class="fas fa-utensils"></i>
+                                <span>Романтический ужин при свечах</span>
+                            </div>
+                            <div class="offer-feature">
+                                <i class="fas fa-hot-tub"></i>
+                                <span>Посещение сауны (1 час)</span>
+                            </div>
+                            <div class="offer-feature">
+                                <i class="fas fa-glass-cheers"></i>
+                                <span>Бутылка шампанского и фрукты в номер</span>
+                            </div>
+                        </div>
+                        <div class="offer-price">
+                            <span class="old-price">7500 ₽</span> 5900 ₽ за ночь
+                        </div>
+                        <div class="offer-valid">
+                            <i class="fas fa-calendar-alt"></i> Действует до 31 мая 2025 г.
+                        </div>
+                        <a href="index.html#booking" class="btn btn-primary">Забронировать</a>
+                    </div>
+                </div>
+                
+                <div class="seasonal-offer">
+                    <div class="seasonal-offer-image">
+                        <div class="offer-badge">Новинка</div>
+                        <img src="assets/images/family.jpg" alt="Семейный отдых">
+                    </div>
+                    <div class="seasonal-offer-content">
+                        <h3>Семейный отдых</h3>
+                        <div class="seasonal-offer-description">
+                            <p>Идеальное предложение для отдыха всей семьей. Просторный семейный номер, специальная программа для детей и множество развлечений для взрослых сделают ваш отдых незабываемым.</p>
+                        </div>
+                        <div class="offer-features">
+                            <div class="offer-feature">
+                                <i class="fas fa-home"></i>
+                                <span>Проживание в семейном номере</span>
+                            </div>
+                            <div class="offer-feature">
+                                <i class="fas fa-coffee"></i>
+                                <span>Завтраки для всей семьи</span>
+                            </div>
+                            <div class="offer-feature">
+                                <i class="fas fa-child"></i>
+                                <span>Детская анимационная программа</span>
+                            </div>
+                            <div class="offer-feature">
+                                <i class="fas fa-bicycle"></i>
+                                <span>Бесплатная аренда велосипедов</span>
+                            </div>
+                        </div>
+                        <div class="offer-price">
+                            <span class="old-price">8000 ₽</span> 6500 ₽ за ночь
+                        </div>
+                        <div class="offer-valid">
+                            <i class="fas fa-calendar-alt"></i> Действует круглый год
+                        </div>
+                        <a href="index.html#booking" class="btn btn-primary">Забронировать</a>
+                    </div>
+                </div>
+                
+                <div class="seasonal-offer">
+                    <div class="seasonal-offer-image">
+                        <div class="offer-badge">-30%</div>
+                        <img src="assets/images/long-stay.jpg" alt="Длительное проживание">
+                    </div>
+                    <div class="seasonal-offer-content">
+                        <h3>Длительное проживание</h3>
+                        <div class="seasonal-offer-description">
+                            <p>Специальное предложение для гостей, планирующих длительное пребывание в нашей гостинице. Комфортное размещение по выгодной цене с дополнительными бонусами.</p>
+                        </div>
+                        <div class="offer-features">
+                            <div class="offer-feature">
+                                <i class="fas fa-bed"></i>
+                                <span>Проживание от 7 ночей</span>
+                            </div>
+                            <div class="offer-feature">
+                                <i class="fas fa-percentage"></i>
+                                <span>Скидка 30% от базовой стоимости</span>
+                            </div>
+                            <div class="offer-feature">
+                                <i class="fas fa-broom"></i>
+                                <span>Еженедельная уборка и смена белья</span>
+                            </div>
+                            <div class="offer-feature">
+                                <i class="fas fa-parking"></i>
+                                <span>Бесплатная парковка</span>
+                            </div>
+                        </div>
+                        <div class="offer-price">
+                            от 3500 ₽ за ночь при длительном проживании
+                        </div>
+                        <div class="offer-valid">
+                            <i class="fas fa-calendar-alt"></i> Действует круглый год
+                        </div>
+                        <a href="index.html#booking" class="btn btn-primary">Забронировать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promotion-section">
+        <div class="container">
+            <h2>Акции и промокоды</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="promo-box">
+                        <h3>Скидка для новых гостей</h3>
+                        <p>Забронируйте номер впервые и получите скидку 10% на проживание</p>
+                        <div class="promo-code">WELCOME</div>
+                        <a href="index.html#booking" class="btn btn-primary">Забронировать</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="promo-box">
+                        <h3>Летний отдых 2025</h3>
+                        <p>Специальное предложение на летний сезон 2025 года</p>
+                        <div class="promo-code">SUMMER2025</div>
+                        <a href="index.html#booking" class="btn btn-primary">Забронировать</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="promo-box">
+                        <h3>Семейная скидка</h3>
+                        <p>Скидка 20% при бронировании семейного номера</p>
+                        <div class="promo-code">FAMILY</div>
+                        <a href="index.html#booking" class="btn btn-primary">Забронировать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="promo-box">
+                        <h3>Длительное проживание</h3>
+                        <p>Скидка 25% при бронировании от 7 ночей</p>
+                        <div class="promo-code">LONGSTAY</div>
+                        <a href="index.html#booking" class="btn btn-primary">Забронировать</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="promo-box">
+                        <h3>День рождения</h3>
+                        <p>Специальный подарок при проживании в день рождения</p>
+                        <p>* Требуется подтверждение даты рождения</p>
+                        <a href="index.html#booking" class="btn btn-primary">Забронировать</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="promo-box">
+                        <h3>Будни со скидкой</h3>
+                        <p>Скидка 15% на все номера с понедельника по четверг</p>
+                        <p>* Применяется автоматически при бронировании</p>
+                        <a href="index.html#booking" class="btn btn-primary">Забронировать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Не нашли подходящего предложения?</h2>
+                <p>Наши менеджеры помогут подобрать оптимальный вариант проживания для вас. Свяжитесь с нами по телефону или электронной почте, и мы предложим индивидуальные условия.</p>
+                <a href="index.html#contacts" class="btn btn-primary">Связаться с нами</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="Лесной дворик">
+                    <p>Гостиница "Лесной дворик" - уютное место для отдыха в гармонии с природой</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html#about">О нас</a></li>
+                        <li><a href="hotel.html">Гостиница</a></li>
+                        <li><a href="sauna.html">Сауна</a></li>
+                        <li><a href="banquet.html">Банкетный зал</a></li>
+                        <li><a href="special.html">Спецпредложения</a></li>
+                        <li><a href="index.html#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contacts">
+                    <h3>Свяжитесь с нами</h3>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@lesnoy-dvorik.ru">info@lesnoy-dvorik.ru</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Лесная, д. 10</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Гостиница "Лесной дворик". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно политики конфиденциальности -->
+    <div id="privacy-policy-modal" class="privacy-modal">
+        <div class="privacy-modal-content">
+            <span class="privacy-modal-close">&times;</span>
+            <h2>Политика конфиденциальности</h2>
+            <h3>1. Общие положения</h3>
+            <p>Настоящая политика конфиденциальности описывает, как гостиница "Лесной дворик" собирает, использует и защищает персональные данные, которые вы предоставляете нам при использовании нашего сайта.</p>
+            
+            <h3>2. Какую информацию мы собираем</h3>
+            <p>Мы можем собирать следующую информацию:</p>
+            <ul>
+                <li>Ваше имя и контактные данные (телефон, email)</li>
+                <li>Информация о бронировании (даты, тип номера, дополнительные услуги)</li>
+                <li>Информация о предпочтениях и пожеланиях</li>
+                <li>Техническая информация о вашем устройстве и посещении сайта</li>
+            </ul>
+            
+            <h3>3. Как мы используем эту информацию</h3>
+            <p>Мы используем эту информацию для:</p>
+            <ul>
+                <li>Обработки вашего бронирования</li>
+                <li>Связи с вами по вопросам бронирования</li>
+                <li>Улучшения работы нашего сайта и услуг</li>
+                <li>Отправки важной информации о вашем пребывании</li>
+            </ul>
+            
+            <h3>4. Защита информации</h3>
+            <p>Мы принимаем все необходимые меры для защиты ваших персональных данных от несанкционированного доступа, изменения, раскрытия или уничтожения.</p>
+            
+            <h3>5. Раскрытие информации третьим лицам</h3>
+            <p>Мы не продаем, не обмениваем и не передаем ваши персональные данные третьим лицам без вашего согласия, за исключением случаев, предусмотренных законодательством РФ.</p>
+            
+            <h3>6. Согласие</h3>
+            <p>Используя наш сайт и предоставляя свои персональные данные, вы соглашаетесь с условиями настоящей политики конфиденциальности.</p>
+            
+            <h3>7. Изменения в политике конфиденциальности</h3>
+            <p>Мы оставляем за собой право вносить изменения в нашу политику конфиденциальности. Любые изменения будут размещены на этой странице.</p>
+            
+            <p><strong>Последнее обновление: 10 марта 2025 г.</strong></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

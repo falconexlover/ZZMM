@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Номера гостиницы "Лесной дворик" - Комфортное проживание</title>
+    <meta name="description" content="Номерной фонд гостиницы 'Лесной дворик'. Комфортабельные номера различных категорий для отдыха семьей, парой или компанией.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hotel-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Лесной дворик">
+                </a>
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html#about">О нас</a></li>
+                    <li class="dropdown">
+                        <a href="hotel.html" class="active">Гостиница</a>
+                        <div class="dropdown-content">
+                            <a href="#econom">Эконом</a>
+                            <a href="#standard">Стандарт</a>
+                            <a href="#family">Семейные</a>
+                            <a href="#comfort">Комфорт</a>
+                            <a href="#lux">Люкс</a>
+                        </div>
+                    </li>
+                    <li><a href="sauna.html">Сауна</a></li>
+                    <li><a href="banquet.html">Банкетный зал</a></li>
+                    <li><a href="special.html">Спецпредложения</a></li>
+                    <li><a href="index.html#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="booking-button">
+                <a href="index.html#booking" class="btn btn-primary">Забронировать</a>
+            </div>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="page-banner">
+        <div class="page-banner-content">
+            <h1>Номера гостиницы</h1>
+            <p>Комфортабельные номера различных категорий для вашего идеального отдыха</p>
+        </div>
+    </div>
+
+    <section class="price-section">
+        <div class="container">
+            <h2>Стоимость проживания</h2>
+            <p>У нас вы найдете номера на любой вкус и бюджет. Каждый номер оборудован всем необходимым для комфортного проживания.</p>
+            
+            <div class="price-table-wrapper">
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Категория номера</th>
+                            <th>Вместимость</th>
+                            <th>Стоимость за сутки</th>
+                            <th>Стоимость с завтраком</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Эконом</td>
+                            <td>1-2 человека</td>
+                            <td>2 500 ₽</td>
+                            <td>3 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Стандарт</td>
+                            <td>1-2 человека</td>
+                            <td>3 500 ₽</td>
+                            <td>4 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Семейный</td>
+                            <td>2-4 человека</td>
+                            <td>4 500 ₽</td>
+                            <td>5 500 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Комфорт</td>
+                            <td>1-2 человека</td>
+                            <td>5 500 ₽</td>
+                            <td>6 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Люкс</td>
+                            <td>2-3 человека</td>
+                            <td>8 000 ₽</td>
+                            <td>9 000 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="price-notes">
+                <p><i class="fas fa-info-circle"></i> Указана стоимость за номер в сутки, независимо от количества гостей.</p>
+                <p><i class="fas fa-info-circle"></i> Заезд после 14:00, выезд до 12:00.</p>
+                <p><i class="fas fa-info-circle"></i> Возможно раннее заселение и поздний выезд за дополнительную плату.</p>
+                <p><i class="fas fa-info-circle"></i> Для длительного проживания (от 7 суток) предоставляется скидка 10%.</p>
+                <p><i class="fas fa-info-circle"></i> В будние дни (Пн-Чт) действует скидка 15% на все категории номеров.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="rooms" class="rooms-section">
+        <div class="container">
+            <h2>Наши номера</h2>
+            
+            <article id="econom" class="room-card">
+                <div class="room-image">
+                    <img src="assets/images/room-econom.jpg" alt="Номер Эконом">
+                </div>
+                <div class="room-content">
+                    <h3>Номер "Эконом"</h3>
+                    <div class="room-features">
+                        <div class="feature">
+                            <i class="fas fa-user-friends"></i>
+                            <span>1-2 человека</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-vector-square"></i>
+                            <span>16 м²</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bed"></i>
+                            <span>Односпальная/двуспальная кровать</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shower"></i>
+                            <span>Душ</span>
+                        </div>
+                    </div>
+                    <div class="room-description">
+                        <p>Уютный однокомнатный номер со всем необходимым для комфортного проживания. В номере: кровать, прикроватные тумбочки, шкаф для одежды, стол, стул, телевизор, холодильник, санузел с душем.</p>
+                        <p>Идеальный вариант для одного гостя или пары, которые хотят сэкономить на проживании.</p>
+                    </div>
+                    <div class="room-price">
+                        <p>Стоимость за сутки: <span>2 500 ₽</span></p>
+                        <a href="index.html#booking" class="btn btn-primary">Забронировать</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article id="standard" class="room-card">
+                <div class="room-image">
+                    <img src="assets/images/room-standard.jpg" alt="Номер Стандарт">
+                </div>
+                <div class="room-content">
+                    <h3>Номер "Стандарт"</h3>
+                    <div class="room-features">
+                        <div class="feature">
+                            <i class="fas fa-user-friends"></i>
+                            <span>1-2 человека</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-vector-square"></i>
+                            <span>20 м²</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bed"></i>
+                            <span>Двуспальная кровать</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shower"></i>
+                            <span>Душ</span>
+                        </div>
+                    </div>
+                    <div class="room-description">
+                        <p>Просторный и светлый номер с большой двуспальной кроватью. В номере: двуспальная кровать, прикроватные тумбочки, шкаф для одежды, стол, стулья, телевизор, холодильник, чайник, санузел с душем.</p>
+                        <p>Оптимальный выбор для пары, ценящей комфорт и уют.</p>
+                    </div>
+                    <div class="room-price">
+                        <p>Стоимость за сутки: <span>3 500 ₽</span></p>
+                        <a href="index.html#booking" class="btn btn-primary">Забронировать</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article id="family" class="room-card">
+                <div class="room-image">
+                    <img src="assets/images/room-family.jpg" alt="Номер Семейный">
+                </div>
+                <div class="room-content">
+                    <h3>Номер "Семейный"</h3>
+                    <div class="room-features">
+                        <div class="feature">
+                            <i class="fas fa-user-friends"></i>
+                            <span>2-4 человека</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-vector-square"></i>
+                            <span>30 м²</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bed"></i>
+                            <span>Двуспальная кровать и раскладной диван</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shower"></i>
+                            <span>Ванна</span>
+                        </div>
+                    </div>
+                    <div class="room-description">
+                        <p>Просторный номер для семейного отдыха. В номере: двуспальная кровать, раскладной диван, прикроватные тумбочки, шкаф для одежды, стол, стулья, телевизор, холодильник, чайник, санузел с ванной.</p>
+                        <p>Идеальный вариант для семьи с детьми или компании друзей.</p>
+                    </div>
+                    <div class="room-price">
+                        <p>Стоимость за сутки: <span>4 500 ₽</span></p>
+                        <a href="index.html#booking" class="btn btn-primary">Забронировать</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article id="comfort" class="room-card">
+                <div class="room-image">
+                    <img src="assets/images/room-comfort.jpg" alt="Номер Комфорт">
+                </div>
+                <div class="room-content">
+                    <h3>Номер "Комфорт"</h3>
+                    <div class="room-features">
+                        <div class="feature">
+                            <i class="fas fa-user-friends"></i>
+                            <span>1-2 человека</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-vector-square"></i>
+                            <span>25 м²</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bed"></i>
+                            <span>Большая двуспальная кровать</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bath"></i>
+                            <span>Ванна</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-coffee"></i>
+                            <span>Кофемашина</span>
+                        </div>
+                    </div>
+                    <div class="room-description">
+                        <p>Улучшенный номер с современным дизайном и повышенной комфортностью. В номере: большая двуспальная кровать, прикроватные тумбочки, шкаф для одежды, рабочий стол, кресло, телевизор, холодильник, кофемашина, санузел с ванной, фен, халаты и тапочки.</p>
+                        <p>Отличный выбор для гостей, ценящих повышенный комфорт.</p>
+                    </div>
+                    <div class="room-price">
+                        <p>Стоимость за сутки: <span>5 500 ₽</span></p>
+                        <a href="index.html#booking" class="btn btn-primary">Забронировать</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article id="lux" class="room-card premium">
+                <div class="room-image">
+                    <div class="room-badge">Премиум</div>
+                    <img src="assets/images/room-lux.jpg" alt="Номер Люкс">
+                </div>
+                <div class="room-content">
+                    <h3>Номер "Люкс"</h3>
+                    <div class="room-features">
+                        <div class="feature">
+                            <i class="fas fa-user-friends"></i>
+                            <span>2-3 человека</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-vector-square"></i>
+                            <span>45 м²</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-door-open"></i>
+                            <span>2 комнаты</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bath"></i>
+                            <span>Джакузи</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-coffee"></i>
+                            <span>Кофемашина</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-wind"></i>
+                            <span>Кондиционер</span>
+                        </div>
+                    </div>
+                    <div class="room-description">
+                        <p>Роскошный двухкомнатный номер с отдельной гостиной и спальней. В номере: большая двуспальная кровать в спальне, мягкий раскладной диван в гостиной, прикроватные тумбочки, шкаф для одежды, рабочий стол, кресла, два телевизора, холодильник, мини-бар, кофемашина, санузел с джакузи, фен, халаты и тапочки, кондиционер.</p>
+                        <p>Лучший выбор для тех, кто привык к роскоши и комфорту высшего уровня.</p>
+                    </div>
+                    <div class="room-price">
+                        <p>Стоимость за сутки: <span>8 000 ₽</span></p>
+                        <a href="index.html#booking" class="btn btn-primary">Забронировать</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="amenities" class="amenities-section">
+        <div class="container">
+            <h2>Удобства и услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-wifi"></i>
+                    <h3>Бесплатный Wi-Fi</h3>
+                    <p>Высокоскоростной интернет доступен во всех номерах и общественных зонах</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Бесплатная парковка</h3>
+                    <p>Охраняемая парковка на территории гостиницы для гостей</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Ресторан</h3>
+                    <p>Ресторан с разнообразным меню русской и европейской кухни</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-coffee"></i>
+                    <h3>Завтраки</h3>
+                    <p>Завтраки "шведский стол" с 7:00 до 10:00</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-hot-tub"></i>
+                    <h3>Сауна</h3>
+                    <p>Финская сауна и русская баня доступны для гостей отеля</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-concierge-bell"></i>
+                    <h3>Обслуживание номеров</h3>
+                    <p>Ежедневная уборка и смена белья</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shuttle-van"></i>
+                    <h3>Трансфер</h3>
+                    <p>Трансфер из/в аэропорт или ж/д вокзал (за дополнительную плату)</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-child"></i>
+                    <h3>Детская площадка</h3>
+                    <p>Игровая площадка на открытом воздухе для детей</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="room-gallery" class="room-gallery">
+        <div class="container">
+            <h2>Фотогалерея</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-1.jpg" alt="Интерьер номера">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-2.jpg" alt="Ванная комната">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-3.jpg" alt="Вид из окна">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-4.jpg" alt="Ресторан">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-5.jpg" alt="Холл гостиницы">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-6.jpg" alt="Территория">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-7.jpg" alt="Номер Люкс">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-8.jpg" alt="Завтрак">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Забронируйте номер прямо сейчас</h2>
+                <p>Для бронирования номера заполните форму на сайте или свяжитесь с нами по телефону. Мы гарантируем лучшие цены при прямом бронировании!</p>
+                <a href="index.html#booking" class="btn btn-primary">Перейти к бронированию</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="Лесной дворик">
+                    <p>Гостиница "Лесной дворик" - уютное место для отдыха в гармонии с природой</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html#about">О нас</a></li>
+                        <li><a href="hotel.html">Гостиница</a></li>
+                        <li><a href="sauna.html">Сауна</a></li>
+                        <li><a href="banquet.html">Банкетный зал</a></li>
+                        <li><a href="special.html">Спецпредложения</a></li>
+                        <li><a href="index.html#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contacts">
+                    <h3>Свяжитесь с нами</h3>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@lesnoy-dvorik.ru">info@lesnoy-dvorik.ru</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Лесная, д. 10</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Гостиница "Лесной дворик". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно политики конфиденциальности -->
+    <div id="privacy-policy-modal" class="privacy-modal">
+        <div class="privacy-modal-content">
+            <span class="privacy-modal-close">&times;</span>
+            <h2>Политика конфиденциальности</h2>
+            <h3>1. Общие положения</h3>
+            <p>Настоящая политика конфиденциальности описывает, как гостиница "Лесной дворик" собирает, использует и защищает персональные данные, которые вы предоставляете нам при использовании нашего сайта.</p>
+            
+            <h3>2. Какую информацию мы собираем</h3>
+            <p>Мы можем собирать следующую информацию:</p>
+            <ul>
+                <li>Ваше имя и контактные данные (телефон, email)</li>
+                <li>Информация о бронировании (даты, тип номера, дополнительные услуги)</li>
+                <li>Информация о предпочтениях и пожеланиях</li>
+                <li>Техническая информация о вашем устройстве и посещении сайта</li>
+            </ul>
+            
+            <h3>3. Как мы используем эту информацию</h3>
+            <p>Мы используем эту информацию для:</p>
+            <ul>
+                <li>Обработки вашего бронирования</li>
+                <li>Связи с вами по вопросам бронирования</li>
+                <li>Улучшения работы нашего сайта и услуг</li>
+                <li>Отправки важной информации о вашем пребывании</li>
+            </ul>
+            
+            <h3>4. Защита информации</h3>
+            <p>Мы принимаем все необходимые меры для защиты ваших персональных данных от несанкционированного доступа, изменения, раскрытия или уничтожения.</p>
+            
+            <h3>5. Раскрытие информации третьим лицам</h3>
+            <p>Мы не продаем, не обмениваем и не передаем ваши персональные данные третьим лицам без вашего согласия, за исключением случаев, предусмотренных законодательством РФ.</p>
+            
+            <h3>6. Согласие</h3>
+            <p>Используя наш сайт и предоставляя свои персональные данные, вы соглашаетесь с условиями настоящей политики конфиденциальности.</p>
+            
+            <h3>7. Изменения в политике конфиденциальности</h3>
+            <p>Мы оставляем за собой право вносить изменения в нашу политику конфиденциальности. Любые изменения будут размещены на этой странице.</p>
+            
+            <p><strong>Последнее обновление: 10 марта 2025 г.</strong></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Банкетный зал "Лесной дворик" - Организация мероприятий любого формата</title>
+    <meta name="description" content="Банкетный зал в гостинице 'Лесной дворик'. Организация свадеб, юбилеев, корпоративных мероприятий и праздников любого формата.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .page-under-construction {
+            text-align: center;
+            padding: 100px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .page-under-construction i {
+            font-size: 100px;
+            color: #5a8f7b;
+            margin-bottom: 30px;
+        }
+        
+        .page-under-construction h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .page-under-construction p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #666;
+        }
+        
+        .event-types {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .event-type {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            width: 230px;
+            text-align: center;
+        }
+        
+        .event-type i {
+            font-size: 40px;
+            color: #5a8f7b;
+            margin-bottom: 15px;
+        }
+        
+        .event-type h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        .capacity-info {
+            background: #f0f7f4;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 30px auto;
+            max-width: 500px;
+        }
+        
+        .capacity-info h3 {
+            color: #5a8f7b;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Лесной дворик">
+                </a>
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html#about">О нас</a></li>
+                    <li class="dropdown">
+                        <a href="hotel.html">Гостиница</a>
+                        <div class="dropdown-content">
+                            <a href="hotel.html#econom">Эконом</a>
+                            <a href="hotel.html#standard">Стандарт</a>
+                            <a href="hotel.html#family">Семейные</a>
+                            <a href="hotel.html#comfort">Комфорт</a>
+                            <a href="hotel.html#lux">Люкс</a>
+                        </div>
+                    </li>
+                    <li><a href="sauna.html">Сауна</a></li>
+                    <li><a href="banquet.html" class="active">Банкетный зал</a></li>
+                    <li><a href="special.html">Спецпредложения</a></li>
+                    <li><a href="index.html#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="booking-button">
+                <a href="#booking" class="btn btn-primary">Забронировать</a>
+            </div>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="slide-container">
+            <div class="slide">
+                <img src="assets/images/banquet.jpg" alt="Банкетный зал Лесной дворик">
+                <div class="slide-content">
+                    <h1>Банкетный зал "Лесной дворик"</h1>
+                    <p>Идеальное место для ваших торжеств и мероприятий</p>
+                    <a href="#booking" class="btn btn-primary">Забронировать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="banquet-info" class="banquet-info">
+        <div class="container">
+            <h2>О нашем банкетном зале</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/images/banquet-inside.jpg" alt="Интерьер банкетного зала">
+                </div>
+                <div class="about-text">
+                    <p>Банкетный зал "Лесной дворик" - это идеальное место для проведения торжественных мероприятий любого формата: от романтических свадеб и семейных юбилеев до корпоративных праздников и деловых встреч.</p>
+                    <p>Просторное помещение с высокими потолками и панорамными окнами создаёт особую атмосферу для вашего события. Зал оформлен в элегантном стиле с использованием натуральных материалов, что подчеркивает концепцию экологичности нашей гостиницы.</p>
+                    <p>Мы предлагаем полный комплекс услуг по организации мероприятий, включая разработку индивидуального меню, декорирование, музыкальное сопровождение и развлекательную программу.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="banquet-halls" class="banquet-halls">
+        <div class="container">
+            <h2>Наши залы</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-glass-cheers"></i>
+                    <h3>Большой зал "Лесной"</h3>
+                    <p>Просторный зал для масштабных мероприятий</p>
+                    <ul class="features-list">
+                        <li>Вместимость до 120 человек</li>
+                        <li>Площадь 250 м²</li>
+                        <li>Сцена</li>
+                        <li>Танцпол</li>
+                        <li>Профессиональное звуковое и световое оборудование</li>
+                    </ul>
+                    <p class="price">от 70 000 ₽</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Средний зал "Поляна"</h3>
+                    <p>Уютный зал для средних мероприятий</p>
+                    <ul class="features-list">
+                        <li>Вместимость до 60 человек</li>
+                        <li>Площадь 150 м²</li>
+                        <li>Барная стойка</li>
+                        <li>Камин</li>
+                        <li>Звуковая система</li>
+                    </ul>
+                    <p class="price">от 40 000 ₽</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-wine-glass-alt"></i>
+                    <h3>Малый зал "Беседка"</h3>
+                    <p>Камерный зал для небольших событий</p>
+                    <ul class="features-list">
+                        <li>Вместимость до 30 человек</li>
+                        <li>Площадь 80 м²</li>
+                        <li>Панорамные окна</li>
+                        <li>Летняя терраса</li>
+                        <li>Возможность объединения со средним залом</li>
+                    </ul>
+                    <p class="price">от 25 000 ₽</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="event-types" class="event-types">
+        <div class="container">
+            <h2>Виды мероприятий</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Свадьбы</h3>
+                    <p>Организация свадебных торжеств под ключ</p>
+                    <ul class="features-list">
+                        <li>Свадебное меню</li>
+                        <li>Оформление зала</li>
+                        <li>Фото и видеосъемка</li>
+                        <li>Ведущий и музыкальное сопровождение</li>
+                        <li>Специальные номера для молодоженов</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-birthday-cake"></i>
+                    <h3>Юбилеи и дни рождения</h3>
+                    <p>Организация незабываемых праздников</p>
+                    <ul class="features-list">
+                        <li>Индивидуальное меню</li>
+                        <li>Тематическое оформление</li>
+                        <li>Развлекательная программа</li>
+                        <li>Праздничный торт</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Корпоративные мероприятия</h3>
+                    <p>Деловые встречи и корпоративные праздники</p>
+                    <ul class="features-list">
+                        <li>Бизнес-ланчи</li>
+                        <li>Конференции</li>
+                        <li>Презентации</li>
+                        <li>Тимбилдинг</li>
+                        <li>Новогодние корпоративы</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Выпускные</h3>
+                    <p>Организация школьных и студенческих выпускных</p>
+                    <ul class="features-list">
+                        <li>Специальные меню</li>
+                        <li>Развлекательная программа</li>
+                        <li>Фотозона</li>
+                        <li>Безопасность и контроль</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="catering" class="catering">
+        <div class="container">
+            <h2>Меню и кейтеринг</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/images/catering.jpg" alt="Кейтеринг">
+                </div>
+                <div class="about-text">
+                    <p>Наш шеф-повар разработает для вашего мероприятия уникальное меню, учитывая все ваши пожелания и предпочтения гостей. Мы используем только свежие продукты высокого качества и предлагаем блюда русской и европейской кухни.</p>
+                    <p>Вы можете выбрать один из готовых вариантов банкетного меню или составить индивидуальное. Мы также предлагаем специальные детские меню, вегетарианские блюда и учитываем особые диетические требования.</p>
+                    <h3>Варианты обслуживания:</h3>
+                    <ul>
+                        <li>Банкетное обслуживание</li>
+                        <li>Фуршет</li>
+                        <li>Шведский стол</li>
+                        <li>Коктейльное обслуживание</li>
+                        <li>Кофе-брейки</li>
+                    </ul>
+                    <p class="price-note">Стоимость меню: от 2500 ₽ на человека</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="additional-services" class="additional-services">
+        <div class="container">
+            <h2>Дополнительные услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-camera"></i>
+                    <h3>Фото и видеосъемка</h3>
+                    <p>Профессиональная фото и видеосъемка вашего мероприятия</p>
+                    <p class="price">от 20 000 ₽</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-microphone"></i>
+                    <h3>Ведущий и музыка</h3>
+                    <p>Профессиональные ведущие, диджеи и музыкальные группы</p>
+                    <p class="price">от 25 000 ₽</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Оформление и декор</h3>
+                    <p>Декорирование зала в соответствии с тематикой мероприятия</p>
+                    <p class="price">от 15 000 ₽</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shuttle-van"></i>
+                    <h3>Трансфер</h3>
+                    <p>Организация трансфера для гостей мероприятия</p>
+                    <p class="price">от 5 000 ₽</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Фотогалерея</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/images/banquet-gallery-1.jpg" alt="Большой зал">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/banquet-gallery-2.jpg" alt="Средний зал">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/banquet-gallery-3.jpg" alt="Малый зал">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/banquet-gallery-4.jpg" alt="Свадебное оформление">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/banquet-gallery-5.jpg" alt="Банкетный стол">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/banquet-gallery-6.jpg" alt="Летняя терраса">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2>Забронировать банкетный зал</h2>
+            <form class="booking-form" id="banquet-booking-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="event-date">Дата мероприятия</label>
+                        <input type="date" id="event-date" name="event_date" required min="">
+                    </div>
+                    <div class="form-group">
+                        <label for="event-time">Время начала</label>
+                        <select id="event-time" name="event_time" required>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00" selected>18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="event-duration">Продолжительность (часов)</label>
+                        <select id="event-duration" name="event_duration" required>
+                            <option value="4">4 часа</option>
+                            <option value="5">5 часов</option>
+                            <option value="6" selected>6 часов</option>
+                            <option value="7">7 часов</option>
+                            <option value="8">8 часов</option>
+                            <option value="10">10 часов</option>
+                            <option value="12">12 часов</option>
+                            <option value="24">24 часа (весь день)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="hall-type">Зал</label>
+                        <select id="hall-type" name="hall_type" required>
+                            <option value="large">Большой зал "Лесной"</option>
+                            <option value="medium" selected>Средний зал "Поляна"</option>
+                            <option value="small">Малый зал "Беседка"</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="event-type">Тип мероприятия</label>
+                        <select id="event-type" name="event_type" required>
+                            <option value="wedding">Свадьба</option>
+                            <option value="birthday">День рождения / Юбилей</option>
+                            <option value="corporate">Корпоратив</option>
+                            <option value="graduation">Выпускной</option>
+                            <option value="conference">Конференция</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests-count">Количество гостей</label>
+                        <input type="number" id="guests-count" name="guests_count" min="10" max="120" required value="30">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Дополнительные услуги</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="catering" value="1" checked> Кейтеринг</label>
+                        <label><input type="checkbox" name="decoration" value="1"> Оформление и декор</label>
+                        <label><input type="checkbox" name="photographer" value="1"> Фотограф</label>
+                        <label><input type="checkbox" name="videographer" value="1"> Видеооператор</label>
+                        <label><input type="checkbox" name="host" value="1"> Ведущий</label>
+                        <label><input type="checkbox" name="music" value="1"> Музыкальное сопровождение</label>
+                        <label><input type="checkbox" name="transfer" value="1"> Трансфер</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="banquet-name">Ваше имя</label>
+                        <input type="text" id="banquet-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="banquet-phone">Телефон</label>
+                        <input type="tel" id="banquet-phone" name="phone" required placeholder="+7 (___) ___-__-__">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="banquet-email">Email</label>
+                    <input type="email" id="banquet-email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="banquet-payment-method">Способ оплаты</label>
+                        <select id="banquet-payment-method" name="payment_method">
+                            <option value="card">Банковская карта</option>
+                            <option value="cash">Наличными</option>
+                            <option value="bank-transfer" selected>Банковский перевод</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="banquet-promo-code">Промокод (если есть)</label>
+                        <input type="text" id="banquet-promo-code" name="promo_code">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="banquet-comments">Пожелания и комментарии</label>
+                    <textarea id="banquet-comments" name="comments"></textarea>
+                </div>
+                <div class="form-group privacy-policy">
+                    <label>
+                        <input type="checkbox" name="privacy_agreed" required>
+                        Я согласен с <a href="#" class="open-privacy-policy">политикой конфиденциальности</a> и даю согласие на обработку персональных данных
+                    </label>
+                </div>
+                <div class="booking-summary" id="banquet-booking-summary" style="display: none;">
+                    <h3>Информация о бронировании</h3>
+                    <div class="summary-content">
+                        <p>Загрузка данных...</p>
+                    </div>
+                    <div class="price-estimate">
+                        <p>Примерная стоимость: <span id="banquet-estimated-price">0</span> ₽</p>
+                    </div>
+                </div>
+                <div class="form-buttons">
+                    <button type="button" class="btn btn-secondary" id="calculate-banquet-price">Рассчитать стоимость</button>
+                    <button type="submit" class="btn btn-primary">Отправить заявку</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Отзывы</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>Отмечали свадьбу в "Лесном дворике". Всё было организовано на высшем уровне! Гости в восторге от зала и обслуживания. Отдельное спасибо шеф-повару за потрясающее меню!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="assets/images/avatar4.jpg" alt="Мария и Алексей">
+                        <div>
+                            <h4>Мария и Алексей</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>Провели корпоратив в среднем зале. Удобное расположение, отличный сервис, вкусная еда. Отдельно хочу отметить звуковое оборудование — всё работало без сбоев.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="assets/images/avatar5.jpg" alt="Дмитрий, ООО 'ТехСтрой'">
+                        <div>
+                            <h4>Дмитрий, ООО "ТехСтрой"</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>Отмечали юбилей папы в малом зале. Очень уютная атмосфера, внимательный персонал, меню превзошло все ожидания. Будем рекомендовать друзьям и знакомым!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="assets/images/avatar6.jpg" alt="Светлана Иванова">
+                        <div>
+                            <h4>Светлана Иванова</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Часто задаваемые вопросы</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Как заранее забронировать банкетный зал?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Для бронирования банкетного зала необходимо заполнить форму на нашем сайте или связаться с менеджером по телефону +7 (495) 123-45-67. Для подтверждения бронирования требуется предоплата в размере 30-50% от общей стоимости мероприятия.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Можно ли принести свои напитки и еду?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, вы можете принести свои алкогольные напитки. В этом случае взимается пробковый сбор в размере 300 рублей за бутылку. Что касается еды, мы рекомендуем воспользоваться услугами нашего ресторана, но в отдельных случаях возможно согласование проноса определенных блюд (например, торта).</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Какова минимальная/максимальная вместимость залов?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Малый зал "Беседка" рассчитан на 10-30 человек, средний зал "Поляна" - на 30-60 человек, большой зал "Лесной" - на 60-120 человек. При необходимости мы можем объединить залы для размещения большего количества гостей.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Предоставляете ли вы скидки в определенные дни недели?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, в будние дни (понедельник-четверг) действует скидка 15% на аренду зала. Также существуют сезонные предложения и специальные условия для постоянных клиентов.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Есть ли парковка для гостей?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, у нас есть бесплатная парковка на 50 автомобилей. При проведении крупных мероприятий рекомендуем заранее сообщить нам ориентировочное количество автомобилей для организации дополнительных парковочных мест.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="Лесной дворик">
+                    <p>Гостиница "Лесной дворик" - уютное место для отдыха в гармонии с природой</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html#about">О нас</a></li>
+                        <li><a href="hotel.html">Гостиница</a></li>
+                        <li><a href="sauna.html">Сауна</a></li>
+                        <li><a href="banquet.html">Банкетный зал</a></li>
+                        <li><a href="special.html">Спецпредложения</a></li>
+                        <li><a href="index.html#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contacts">
+                    <h3>Свяжитесь с нами</h3>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@lesnoy-dvorik.ru">info@lesnoy-dvorik.ru</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Лесная, д. 10</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Гостиница "Лесной дворик". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно политики конфиденциальности -->
+    <div id="privacy-policy-modal" class="privacy-modal">
+        <div class="privacy-modal-content">
+            <span class="privacy-modal-close">&times;</span>
+            <h2>Политика конфиденциальности</h2>
+            <h3>1. Общие положения</h3>
+            <p>Настоящая политика конфиденциальности описывает, как гостиница "Лесной дворик" собирает, использует и защищает персональные данные, которые вы предоставляете нам при использовании нашего сайта.</p>
+            
+            <h3>2. Какую информацию мы собираем</h3>
+            <p>Мы можем собирать следующую информацию:</p>
+            <ul>
+                <li>Ваше имя и контактные данные (телефон, email)</li>
+                <li>Информация о бронировании (даты, тип номера, дополнительные услуги)</li>
+                <li>Информация о предпочтениях и пожеланиях</li>
+                <li>Техническая информация о вашем устройстве и посещении сайта</li>
+            </ul>
+            
+            <h3>3. Как мы используем эту информацию</h3>
+            <p>Мы используем эту информацию для:</p>
+            <ul>
+                <li>Обработки вашего бронирования</li>
+                <li>Связи с вами по вопросам бронирования</li>
+                <li>Улучшения работы нашего сайта и услуг</li>
+                <li>Отправки важной информации о вашем пребывании</li>
+            </ul>
+            
+            <h3>4. Защита информации</h3>
+            <p>Мы принимаем все необходимые меры для защиты ваших персональных данных от несанкционированного доступа, изменения, раскрытия или уничтожения.</p>
+            
+            <h3>5. Раскрытие информации третьим лицам</h3>
+            <p>Мы не продаем, не обмениваем и не передаем ваши персональные данные третьим лицам без вашего согласия, за исключением случаев, предусмотренных законодательством РФ.</p>
+            
+            <h3>6. Согласие</h3>
+            <p>Используя наш сайт и предоставляя свои персональные данные, вы соглашаетесь с условиями настоящей политики конфиденциальности.</p>
+            
+            <h3>7. Изменения в политике конфиденциальности</h3>
+            <p>Мы оставляем за собой право вносить изменения в нашу политику конфиденциальности. Любые изменения будут размещены на этой странице.</p>
+            
+            <p><strong>Последнее обновление: 10 марта 2025 г.</strong></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU"></script>
+</body>
+</html> 

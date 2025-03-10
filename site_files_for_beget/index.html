@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гостиница "Лесной дворик" - Уютный отдых в окружении природы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Лесной дворик">
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#about">О нас</a></li>
+                    <li class="dropdown">
+                        <a href="#hotel">Гостиница</a>
+                        <div class="dropdown-content">
+                            <a href="#econom">Эконом</a>
+                            <a href="#standard">Стандарт</a>
+                            <a href="#family">Семейные</a>
+                            <a href="#comfort">Комфорт</a>
+                            <a href="#lux">Люкс</a>
+                        </div>
+                    </li>
+                    <li><a href="#sauna">Сауна</a></li>
+                    <li><a href="#banquet">Банкетный зал</a></li>
+                    <li><a href="#special">Спецпредложения</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="booking-button">
+                <a href="#booking" class="btn btn-primary">Забронировать</a>
+            </div>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="slide-container">
+            <div class="slide">
+                <img src="assets/images/hotel-main.jpg" alt="Отель Лесной дворик">
+                <div class="slide-content">
+                    <h1>Добро пожаловать в "Лесной дворик"</h1>
+                    <p>Идеальное место для отдыха в гармонии с природой</p>
+                    <a href="#booking" class="btn btn-primary">Забронировать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>О нас</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/images/about.jpg" alt="О нашей гостинице">
+                </div>
+                <div class="about-text">
+                    <p>Гостиница "Лесной дворик" - это уютное место, расположенное в живописном уголке природы, где вы сможете насладиться комфортным отдыхом вдали от городской суеты.</p>
+                    <p>Мы придерживаемся экологичного подхода во всем: наши номера оформлены с использованием натуральных материалов, а в ресторане вы можете насладиться блюдами, приготовленными из локальных продуктов.</p>
+                    <p>Просторная территория, чистый воздух и близость к природе делают "Лесной дворик" идеальным местом для семейного отдыха, романтического уик-энда или корпоративного мероприятия.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-bed"></i>
+                    <h3>Комфортное проживание</h3>
+                    <p>Уютные номера различных категорий для любых потребностей</p>
+                    <a href="#hotel" class="btn btn-secondary">Подробнее</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Ресторан</h3>
+                    <p>Ресторан с блюдами русской и европейской кухни</p>
+                    <a href="#restaurant" class="btn btn-secondary">Подробнее</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-hot-tub"></i>
+                    <h3>Сауна</h3>
+                    <p>Русская баня и финская сауна с зоной отдыха</p>
+                    <a href="#sauna" class="btn btn-secondary">Подробнее</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-glass-cheers"></i>
+                    <h3>Банкетный зал</h3>
+                    <p>Организация мероприятий любого формата</p>
+                    <a href="#banquet" class="btn btn-secondary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="special" class="special-offers">
+        <div class="container">
+            <h2>Спецпредложения</h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <img src="assets/images/romantic.jpg" alt="Романтический уик-энд">
+                        <div class="offer-badge">Только до 31 мая</div>
+                    </div>
+                    <div class="offer-content">
+                        <h3>Романтический уик-энд</h3>
+                        <p>Номер категории Комфорт + романтический ужин + посещение сауны</p>
+                        <p class="offer-price">от 5900 ₽</p>
+                        <a href="#booking" class="btn btn-primary">Забронировать</a>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <img src="assets/images/family.jpg" alt="Семейный отдых">
+                        <div class="offer-badge">Новинка</div>
+                    </div>
+                    <div class="offer-content">
+                        <h3>Семейный отдых</h3>
+                        <p>Семейный номер + завтраки + детская программа</p>
+                        <p class="offer-price">от 6500 ₽</p>
+                        <a href="#booking" class="btn btn-primary">Забронировать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2>Забронировать номер</h2>
+            <form class="booking-form" id="hotel-booking-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="arrival-date">Дата заезда</label>
+                        <input type="date" id="arrival-date" name="arrival_date" required min="">
+                    </div>
+                    <div class="form-group">
+                        <label for="departure-date">Дата выезда</label>
+                        <input type="date" id="departure-date" name="departure_date" required min="">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="guests">Количество гостей</label>
+                        <select id="guests" name="guests" required>
+                            <option value="1">1 гость</option>
+                            <option value="2" selected>2 гостя</option>
+                            <option value="3">3 гостя</option>
+                            <option value="4">4 гостя</option>
+                            <option value="5+">5 и более</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="room-type">Тип номера</label>
+                        <select id="room-type" name="room_type" required>
+                            <option value="econom">Эконом</option>
+                            <option value="standard" selected>Стандарт</option>
+                            <option value="family">Семейный</option>
+                            <option value="comfort">Комфорт</option>
+                            <option value="lux">Люкс</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Дополнительные услуги</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="breakfast" value="1"> Завтрак</label>
+                        <label><input type="checkbox" name="dinner" value="1"> Ужин</label>
+                        <label><input type="checkbox" name="sauna" value="1"> Сауна</label>
+                        <label><input type="checkbox" name="transfer" value="1"> Трансфер из города</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="payment-method">Способ оплаты</label>
+                        <select id="payment-method" name="payment_method">
+                            <option value="card">Банковская карта</option>
+                            <option value="cash" selected>Наличными при заселении</option>
+                            <option value="bank-transfer">Банковский перевод</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="promo-code">Промокод (если есть)</label>
+                        <input type="text" id="promo-code" name="promo_code">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Комментарии</label>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+                <div class="form-group privacy-policy">
+                    <label>
+                        <input type="checkbox" name="privacy_agreed" required>
+                        Я согласен с <a href="#" class="open-privacy-policy">политикой конфиденциальности</a> и даю согласие на обработку персональных данных
+                    </label>
+                </div>
+                <div class="booking-summary" id="booking-summary" style="display: none;">
+                    <h3>Информация о бронировании</h3>
+                    <div class="summary-content">
+                        <p>Загрузка данных...</p>
+                    </div>
+                    <div class="price-estimate">
+                        <p>Примерная стоимость: <span id="estimated-price">0</span> ₽</p>
+                    </div>
+                </div>
+                <div class="form-buttons">
+                    <button type="button" class="btn btn-secondary" id="calculate-price">Рассчитать стоимость</button>
+                    <button type="submit" class="btn btn-primary">Отправить заявку</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contacts-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Адрес</h3>
+                            <p>г. Москва, ул. Лесная, д. 10</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Телефон</h3>
+                            <p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@lesnoy-dvorik.ru">info@lesnoy-dvorik.ru</a></p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="Лесной дворик">
+                    <p>Гостиница "Лесной дворик" - уютное место для отдыха в гармонии с природой</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#hotel">Гостиница</a></li>
+                        <li><a href="#sauna">Сауна</a></li>
+                        <li><a href="#banquet">Банкетный зал</a></li>
+                        <li><a href="#special">Спецпредложения</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contacts">
+                    <h3>Свяжитесь с нами</h3>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@lesnoy-dvorik.ru">info@lesnoy-dvorik.ru</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Лесная, д. 10</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Гостиница "Лесной дворик". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно политики конфиденциальности -->
+    <div id="privacy-policy-modal" class="privacy-modal">
+        <div class="privacy-modal-content">
+            <span class="privacy-modal-close">&times;</span>
+            <h2>Политика конфиденциальности</h2>
+            <h3>1. Общие положения</h3>
+            <p>Настоящая политика конфиденциальности описывает, как гостиница "Лесной дворик" собирает, использует и защищает персональные данные, которые вы предоставляете нам при использовании нашего сайта.</p>
+            
+            <h3>2. Какую информацию мы собираем</h3>
+            <p>Мы можем собирать следующую информацию:</p>
+            <ul>
+                <li>Ваше имя и контактные данные (телефон, email)</li>
+                <li>Информация о бронировании (даты, тип номера, дополнительные услуги)</li>
+                <li>Информация о предпочтениях и пожеланиях</li>
+                <li>Техническая информация о вашем устройстве и посещении сайта</li>
+            </ul>
+            
+            <h3>3. Как мы используем эту информацию</h3>
+            <p>Мы используем эту информацию для:</p>
+            <ul>
+                <li>Обработки вашего бронирования</li>
+                <li>Связи с вами по вопросам бронирования</li>
+                <li>Улучшения работы нашего сайта и услуг</li>
+                <li>Отправки важной информации о вашем пребывании</li>
+            </ul>
+            
+            <h3>4. Защита информации</h3>
+            <p>Мы принимаем все необходимые меры для защиты ваших персональных данных от несанкционированного доступа, изменения, раскрытия или уничтожения.</p>
+            
+            <h3>5. Раскрытие информации третьим лицам</h3>
+            <p>Мы не продаем, не обмениваем и не передаем ваши персональные данные третьим лицам без вашего согласия, за исключением случаев, предусмотренных законодательством РФ.</p>
+            
+            <h3>6. Согласие</h3>
+            <p>Используя наш сайт и предоставляя свои персональные данные, вы соглашаетесь с условиями настоящей политики конфиденциальности.</p>
+            
+            <h3>7. Изменения в политике конфиденциальности</h3>
+            <p>Мы оставляем за собой право вносить изменения в нашу политику конфиденциальности. Любые изменения будут размещены на этой странице.</p>
+            
+            <p><strong>Последнее обновление: 10 марта 2025 г.</strong></p>
+        </div>
+    </div>
+
+    <!-- Панель администратора (скрыта по умолчанию) -->
+    <div class="admin-panel" id="admin-panel">
+        <div class="container">
+            <h2>Панель администратора</h2>
+            <h3>Список бронирований</h3>
+            
+            <div id="bookings-container">
+                <p class="empty-list">Нет сохраненных бронирований</p>
+            </div>
+            
+            <button id="clear-all-bookings" class="btn btn-secondary">Очистить все бронирования</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU"></script>
+</body>
+</html> 
